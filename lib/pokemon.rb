@@ -6,7 +6,7 @@ class Pokemon
   end
   
   def self.save(name, type) 
-    db.execute("INSERT INTO students (name, type) VALUES (?,?)
+    db.execute("INSERT INTO students (name, type) VALUES (?,?)" 
     
     
     DB[:conn].execute(sql, self.name, self.type)
