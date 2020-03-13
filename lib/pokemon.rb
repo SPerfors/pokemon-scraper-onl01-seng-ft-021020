@@ -14,7 +14,7 @@ class Pokemon
     id = row[0]
     name = row[1]
     type = row[2]
-    new_pokemon = bob.new(name, grade, id) 
+    new_pokemon = self.new(bob) 
     new_pokemon
   end
     
