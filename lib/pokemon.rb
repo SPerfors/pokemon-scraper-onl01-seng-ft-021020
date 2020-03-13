@@ -15,7 +15,6 @@ class Pokemon
     new_pokemon.id = row[0]
     new_pokemon.name = row[1]
     new_pokemon.type = row[2]
-    new_pokemon = self.new(bob) 
     new_pokemon
   end
     
