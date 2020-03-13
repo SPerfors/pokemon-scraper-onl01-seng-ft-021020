@@ -5,12 +5,8 @@ class Pokemon
     
   end
   
-  def self.save(name, type) 
-    db.execute("INSERT INTO students (name, type) VALUES (?,?)" 
-    
-    
-    DB[:conn].execute(sql, self.name, self.type)
-    @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
+  def self.save(name, type, db) 
+    db.execute("INSERT INTO students (name, type) VALUES (?,?)", name, type)
   end
   
 end
